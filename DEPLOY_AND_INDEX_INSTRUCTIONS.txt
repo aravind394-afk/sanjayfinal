@@ -1,0 +1,21 @@
+HASHTHAS — NETLIFY + GOOGLE INDEXING STEPS
+
+1. Extract this ZIP.
+2. Open Netlify > your Hasthas site > Deploys / Production deploys.
+3. Drag the extracted folder that directly contains index.html, robots.txt,
+   sitemap.xml, styles.css, script.js and the assets folder.
+4. Wait until Netlify marks the production deploy as Published.
+5. Open these URLs in a normal/private browser window:
+   https://hasthasscientificinstruments.netlify.app/
+   https://hasthasscientificinstruments.netlify.app/robots.txt
+   https://hasthasscientificinstruments.netlify.app/sitemap.xml
+6. Each URL must load without login, 404, 5xx or a Netlify error page.
+7. In Google Search Console > Sitemaps, submit: sitemap.xml
+8. In URL Inspection, inspect the homepage, select Test live URL, then
+   select Request indexing after the live test succeeds.
+
+IMPORTANT
+- Do not deploy the old outer folder that contains another website folder inside it.
+- index.html and robots.txt must be in the same top-level publish folder.
+- If robots.txt still fails after a successful redeploy, check Netlify deploy logs,
+  domain/DNS availability, password protection, firewall or access-control settings.
